@@ -22,7 +22,8 @@ menu = json.loads(open('training/menu.json').read())
 
 words = pickle.load(open('training/words.pkl', 'rb'))
 labels = pickle.load(open('training/labels.pkl', 'rb'))
-model = load_model('training\chatbot_model.h5')
+model = load_model('training/chatbot_model.h5')  # not \chatbot_model.h5
+
 
 
 isOrder = False
